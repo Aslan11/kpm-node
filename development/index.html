@@ -14,24 +14,54 @@
 	<title>KPM</title>
 
 	<!-- CSS -->
+	<link href='http://fonts.googleapis.com/css?family=Roboto:400,100,300,500,700' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="/styles/ui-font-solid.css">
+	<link rel="stylesheet" href="/styles/socicon.css">
 	<link rel="stylesheet" href="/styles/main.css">
 </head>
 <body ng-controller="mainController" scroll>
+	<!-- Main Navigation -->
 	<nav class="main-nav">
+		<figure class="menu-trigger">
+			<div class="micro-plus">
+				<div class="bar"></div>
+				<div class="bar"></div>
+			</div>
+			<div class="left">
+				<figure class="trigram">
+					<div class="bar"></div>
+					<div class="bar"></div>
+					<div class="bar"></div>
+				</figure>
+				<figure class="k"></figure>
+			</div>
+			<div class="middle">
+				<figure class="p"></figure>
+			</div>
+			<div class="right">
+				<figure class="m"></figure>
+			</div>
+		</figure>
 		<ul>
-			<li>KPM</li>
-			<li>ABOUT</li>
-			<li>DEVELOPMENT</li>
-			<li></li>
-			<li></li>
-			<li></li>
-			<li></li>
-			<li></li>
-			<li></li>
-			<li></li>
+			<li><a><i class="icon-id-card"></i><span>About</span></a></li>
+			<li><a><i class="icon-code"></i><span>Development</span></a></li>
+			<li><a><i class="icon-coverflow"></i><span>Design</span></a></li>
+			<li><a><i class="icon-flask"></i><span>Lab</span></a></li>
+			<li><a><i class="icon-text-doc"></i><span>Blog</span></a></li>
+			<li><a><i class="icon-envelope"></i><span>Contact</span></a></li>
+			<li><a><i class="icon-notepad"></i><span>Resumé</span></a></li>
+			<li><a><i class="socicon">Q</i><span>Github</span></a></li>
+			<li><a><i class="socicon">D</i><span>Dribbble</span></a></li>
+			<li><a><i class="socicon">j</i><span>Linkedin</span></a></li>
 		</ul>
 	</nav>
+	
+	<!-- Home Container -->
+	<section class="container home-container">
+		
+	</section>
+
+
 	<!-- Scripts -->
 	<script src="/scripts/vendor.js"></script>
 	<script src="/scripts/app.js"></script>

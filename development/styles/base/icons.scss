@@ -1,0 +1,79 @@
+@font-face {
+	font-family: 'icomoon';
+	src:url('fonts/icomoon.eot?-joefas');
+	src:url('fonts/icomoon.eot?#iefix-joefas') format('embedded-opentype'),
+		url('fonts/icomoon.woff?-joefas') format('woff'),
+		url('fonts/icomoon.ttf?-joefas') format('truetype'),
+		url('fonts/icomoon.svg?-joefas#icomoon') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+	font-family: 'icomoon';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.icon-check:before {
+	content: "\e600";
+}
+.icon-search:before {
+	content: "\e601";
+}
+.icon-close:before {
+	content: "\e602";
+}
+.icon-dropdown:before {
+	content: "\e603";
+}
+.icon-linkedin:before {
+	content: "\e604";
+}
+.icon-instagram:before {
+	content: "\e605";
+}
+.icon-twitter:before {
+	content: "\e606";
+}
+.icon-facebook:before {
+	content: "\e607";
+}
+.icon-glasses:before {
+	content: "\e608";
+}
+.icon-menu:before {
+	content: "\e609";
+}
+.icon-drops:before {
+	content: "\e60a";
+}
+.icon-add:before {
+	content: "\e60b";
+}
+.icon-briefcase:before {
+	content: "\e60c";
+}
+.icon-avatar:before {
+	content: "\e60d";
+}
+.icon-more:before {
+	content: "\e60e";
+}
+.icon-explore:before {
+	content: "\e610";
+}
+
+.footer .nav li a i {
+	position: relative;
+	left: -8px;
+	top: 1px;
+}

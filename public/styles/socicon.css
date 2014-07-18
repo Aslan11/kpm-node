@@ -1,0 +1,18 @@
+@font-face {
+    font-family: 'socicon';
+    src: url('fonts/socicon-webfont.eot');
+    src: url('fonts/socicon-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/socicon-webfont.woff') format('woff'),
+         url('fonts/socicon-webfont.ttf') format('truetype'),
+         url('fonts/socicon-webfont.svg#sociconregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.socicon {
+    font-family: 'socicon' !important;
+	font-style: normal;
+	font-size: 20px !important;
+	position: relative;
+	top: 7px;
+}

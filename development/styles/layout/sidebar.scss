@@ -1,0 +1,80 @@
+.main-nav{
+	width: 51px;
+	background: $dark-gray;
+	overflow: hidden;
+	position: absolute;
+	z-index: 9000;
+	height: 100%;
+	top: 0;
+	left: 0;
+	transition: width .3s;
+
+	&:hover{
+		width: 200px;
+	}
+	
+	ul{
+		list-style: none;
+		width: 200px;
+		position: absolute;
+		top: 40px;
+		left: 0;
+		padding: 0;
+		margin: 0;
+
+
+		li{
+			a{
+				width: 200px;
+				height: 40px;
+				margin: 0;
+				padding: 0;
+				border-bottom: 1px solid $gray;
+				transition: color .2s;
+				display: block;
+				vertical-align: middle;
+				position: relative;
+
+				&:after{
+					content: '';
+					width: 0px;
+					height: 1px;
+					background: $white;
+					position: absolute;
+					bottom: -2px;
+					left: 0;
+					transition: width .3s;
+				}
+
+				&:hover{
+					&:after{
+						width: 200px;
+					}
+				}
+
+				span{
+					position: absolute;
+					display: block;
+					left: 60px;
+					top: 9px;
+				}
+			}
+
+			i{
+				font-size: 30px;
+				width: 50px;
+				height: 36px;
+				text-align: center;
+				display: inline-block;
+				position: absolute;
+				top: 3px;
+
+				&.socicon{
+					top: 11px;
+					height: 26px;
+				}
+			}
+		}
+	}
+
+}
