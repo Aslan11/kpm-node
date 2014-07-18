@@ -1,0 +1,19 @@
+
+// Variables
+$light: 	200;
+$regular: 	400;
+$bold: 		700;
+
+
+
+body {
+	font-family: "proxima-nova", sans-serif;
+	font-weight: $light;
+	font-size: 18px;
+	color: $bodygray;
+}
+
+
+a { 
+	color: $darkgray;
+}
