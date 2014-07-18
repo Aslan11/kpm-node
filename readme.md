@@ -20,8 +20,6 @@ Personal Website
 #### Suggested Development Process ####
 
 1. Pull 'master' branch
-2. Pull recent dataset
-	- See 'Download Current Dataset' below
 2. Install dependencies
 	- Node Modules
 	- Bower Components
