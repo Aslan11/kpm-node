@@ -1,7 +1,6 @@
 /*	Define Angular App
 ---------------------------------------------------------------------- */
 var app = angular.module('app', ['ngRoute', 'ngResource', 'ngAnimate', 'ngCookies', 'ngSanitize', 'ngTouch']);
-
 app.config(function($httpProvider, $routeProvider, $locationProvider){
 	$routeProvider.
 		when('/', {
@@ -41,6 +40,13 @@ app.config(function($httpProvider, $routeProvider, $locationProvider){
 });
 /*	Main Controller
 ---------------------------------------------------------------------- */
-app.controller('mainController', function(){
-	
+app.controller('mainController', function($scope, $rootScope, $location, $route, $routeParams, $timeout, $resource){
+	//Get Current View From Router
+	$scope.$on('$routeChangeSuccess', function(){
+		$scope.currentView = $route.current.action;
+	});
+
+	goHome = function(){
+		console.log('hello');
+	};
 });

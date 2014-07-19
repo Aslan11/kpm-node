@@ -11,13 +11,172 @@
 
 	&:hover{
 		width: 200px;
+
+		.menu-trigger{
+
+			>div{
+
+				&.left{
+					transform: translate3d(46px,0,0);
+
+					.micro-plus{
+						transform: translate3d(1px,-1px,0);
+						&:nth-of-type(2){
+							transform: translate3d(26px,-1px,0);
+						}
+						&:nth-of-type(3){
+							transform: translate3d(1px,25px,0);
+						}
+						&:nth-of-type(4){
+							transform: translate3d(26px,25px,0);
+						}
+					}
+
+					.trigram{
+
+						.bar{
+							opacity: 0;
+						}
+
+					}
+
+					.k{
+						opacity: 1;
+					}
+				}
+
+				&.middle{
+					opacity: 1;
+					transform: translate3d(73px,0,0);
+				}
+
+				&.right{
+					opacity: 1;
+					transform: translate3d(100px,0,0)
+				}
+
+			}
+
+		}
+
+	}
+
+	.menu-trigger{
+		position: absolute;
+		height: 50px;
+		width: 200px;
+		display: block;
+		border-bottom: 1px solid $gray;
+
+		>div{
+			width: 26px;
+			height: 26px;
+			display: block;
+			position: absolute;
+			border: 1px solid $mint;
+			top: 12px;
+			left: 12px;
+
+			&.left{
+				z-index: 2;
+				transition: transform .3s;
+				.micro-plus{
+					transition: transform .3s;
+
+					.bar{
+						width: 8px;
+						height: 2px;
+						background: $white;
+						position: absolute;
+						right: -4px;
+						top: -1px;
+						z-index: 2;
+						
+
+						&:nth-of-type(2){
+							transform: rotate(90deg);
+						}
+					}
+				}
+
+				.trigram{
+
+					.bar{
+						width: 15px;
+						height: 2px;
+						background: $white;
+						margin: 0 auto;
+						margin-bottom: 4px;
+						transition: opacity .2s;
+
+						&:nth-of-type(1){
+							margin-top: 6px;
+						}
+					}
+
+				}
+
+				.k{
+					width: 15px;
+					height: 15px;
+					background: url('img/k-small.png');
+					background-size: cover;
+					position: absolute;
+					top: 0;
+					left: 0;
+					right: 0;
+					bottom: 1px;
+					margin: auto;
+					opacity: 0;
+					transition: opacity .3s;
+				}
+
+			}
+
+			&.middle{
+				opacity: 0;
+				transition: transform .3s, opacity .4s;
+
+				.p{
+					width: 15px;
+					height: 15px;
+					background: url('img/p-small.png');
+					background-size: cover;
+					position: absolute;
+					top: 0;
+					left: 0;
+					right: 0;
+					bottom: 1px;
+					margin: auto;
+				}
+
+			}
+
+			&.right{
+				opacity: 0;
+				transition: transform .3s, opacity .5s;
+
+				.m{
+					width: 15px;
+					height: 15px;
+					background: url('img/m-small.png');
+					background-size: cover;
+					position: absolute;
+					top: 0;
+					left: 0;
+					right: 0;
+					bottom: 1px;
+					margin: auto;
+				}
+			}
+		}
 	}
 	
 	ul{
 		list-style: none;
 		width: 200px;
 		position: absolute;
-		top: 40px;
+		top: 50px;
 		left: 0;
 		padding: 0;
 		margin: 0;
@@ -34,6 +193,14 @@
 				display: block;
 				vertical-align: middle;
 				position: relative;
+
+				&.active{
+					color: $white;
+					&:after{
+						width: 200px;
+						background: $mint;
+					}
+				}
 
 				&:after{
 					content: '';
