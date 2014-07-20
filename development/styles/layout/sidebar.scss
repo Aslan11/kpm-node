@@ -68,6 +68,24 @@
 		display: block;
 		border-bottom: 1px solid $gray;
 
+		&:after{
+			content: '';
+			width: 0px;
+			height: 1px;
+			background: $white;
+			position: absolute;
+			bottom: -2px;
+			left: 0;
+			transition: width .3s;
+		}
+
+		&:hover{
+			&:after{
+				width: 200px;
+			}
+		}
+		
+
 		>div{
 			width: 26px;
 			height: 26px;

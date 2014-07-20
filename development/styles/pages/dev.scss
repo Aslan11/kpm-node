@@ -1,0 +1,43 @@
+.dev-container{
+	background: url('img/devbg.jpg');
+	background-size: cover;
+	
+	.cell{
+		max-width: 1076px;
+		width: 80%;
+		margin: 0 auto;
+		position: absolute;
+		left: 0;
+		right: 0;
+		top: 50%;
+		transform: translate3d(0,-50%,0);
+
+		h1{
+			text-align: center;
+			color: white;
+			font-weight: 200;
+		}
+
+
+
+		>div{
+			width: calc(33.33333% - 28px);
+			float: left;
+			color: $white;
+			text-align: center;
+
+			h3{
+				font-weight: 200;
+			}
+			
+			p{
+				text-align: left;
+			}
+
+			&:nth-of-type(2){
+				margin-left: 40px;
+				margin-right: 40px;
+			}
+		}
+	}
+}

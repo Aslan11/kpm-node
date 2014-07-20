@@ -1,0 +1,43 @@
+.about-container{
+	background: url('img/desk.png');
+	background-size: cover;
+	transform: translate3d(0,0,0);
+	.cell{
+		max-width: 1076px;
+		width: 80%;
+		margin: 0 auto;
+		position: absolute;
+		left: 0;
+		right: 0;
+		top: 50%;
+		transform: translate3d(0,-50%,0);
+
+		>div{
+			width: 50%;
+			float: left;
+			max-width: 590px;
+			box-sizing: border-box;
+			color: darken($white, 30%);
+
+			h1{
+				font-weight: 200;
+			}
+
+			&:nth-of-type(1){
+				padding-right: 20px;
+			}
+
+			&:nth-of-type(2){
+				padding-left: 20px;
+			}
+
+			img{
+				max-width: 100%;
+				margin-top: 84px;
+
+			}
+		}
+	}
+
+
+}

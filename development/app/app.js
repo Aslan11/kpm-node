@@ -1,6 +1,15 @@
 /*	Define Angular App
 ---------------------------------------------------------------------- */
-var app = angular.module('app', ['ngRoute', 'ngResource', 'ngAnimate', 'ngCookies', 'ngSanitize', 'ngTouch']);
+var app = angular.module('app', ['ngRoute', 'ngResource', 'ngAnimate', 'ngCookies', 'ngSanitize', 'ngTouch', 'ng']);
+
+/* Kill Animation on Load
+---------------------------------------------------------------------- */
+setTimeout(function(){
+	console.log('boobies');
+	var body = document.getElementsByTagName('body')[0];
+	body.className = '';
+}, 400)
+
 app.config(function($httpProvider, $routeProvider, $locationProvider){
 	$routeProvider.
 		when('/', {
@@ -15,8 +24,8 @@ app.config(function($httpProvider, $routeProvider, $locationProvider){
 			action: 'development'
 		}).
 		
-		when('/portfolio', {
-			action: 'portfolio'
+		when('/design', {
+			action: 'design'
 		}).
 		
 		when('/lab', {
