@@ -1,21 +1,21 @@
 .dev-container{
-	background: url('img/devbg.jpg');
+	background: url('img/homebg.png');
 	background-size: cover;
+	overflow-y: scroll; 
+	color: darken($white, 30%);
 	
 	.cell{
 		max-width: 1076px;
 		width: 80%;
 		margin: 0 auto;
-		position: absolute;
-		left: 0;
-		right: 0;
-		top: 50%;
-		transform: translate3d(0,-50%,0);
+		margin-top: 20px;
 
 		h1{
 			text-align: center;
-			color: white;
 			font-weight: 200;
+			margin-bottom: 40px;
+			margin-top: 40px;
+
 		}
 
 
@@ -23,11 +23,14 @@
 		>div{
 			width: calc(33.33333% - 28px);
 			float: left;
-			color: $white;
 			text-align: center;
 
+			img{
+				max-width: 100%;
+			}
+
 			h3{
-				font-weight: 200;
+				font-weight: 300;
 			}
 			
 			p{

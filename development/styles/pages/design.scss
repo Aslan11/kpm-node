@@ -1,0 +1,20 @@
+.design-container{
+	background: url('img/desk.png');
+	background-size: cover;
+	overflow-y: scroll;
+	padding-bottom: 20px;
+	padding-right: 10px;
+	box-sizing: border-box;
+	color: darken($white, 30%);
+
+	div{
+		margin: 0 auto;
+	}
+
+	img{
+		float: left;
+		margin-left: 20px;
+		margin-top: 20px;
+		width: calc(33% - 20px);
+	}
+}

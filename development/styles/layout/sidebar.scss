@@ -120,7 +120,7 @@
 				.trigram{
 
 					.bar{
-						width: 15px;
+						width: 14px;
 						height: 2px;
 						background: $white;
 						margin: 0 auto;
@@ -253,6 +253,10 @@
 				display: inline-block;
 				position: absolute;
 				top: 3px;
+
+				&.icon-grid-lg{
+					top: 4px;
+				}
 
 				&.socicon{
 					top: 11px;

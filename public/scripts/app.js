@@ -5,10 +5,9 @@ var app = angular.module('app', ['ngRoute', 'ngResource', 'ngAnimate', 'ngCookie
 /* Kill Animation on Load
 ---------------------------------------------------------------------- */
 setTimeout(function(){
-	console.log('boobies');
 	var body = document.getElementsByTagName('body')[0];
 	body.className = '';
-}, 400)
+}, 400);
 
 app.config(function($httpProvider, $routeProvider, $locationProvider){
 	$routeProvider.
