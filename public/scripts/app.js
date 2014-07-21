@@ -26,6 +26,10 @@ app.config(function($httpProvider, $routeProvider, $locationProvider){
 		when('/design', {
 			action: 'design'
 		}).
+
+		when('/apps', {
+			action: 'apps'
+		}).
 		
 		when('/lab', {
 			action: 'lab'

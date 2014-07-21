@@ -636,7 +636,7 @@ body {
         height: 1px;
         background: #f8f8f8;
         position: absolute;
-        bottom: -2px;
+        bottom: -1px;
         left: 0;
         -webkit-transition: width 0.3s;
         -moz-transition: width 0.3s;
@@ -658,6 +658,8 @@ body {
       position: absolute;
       top: 3px; }
       .main-nav ul li i.icon-grid-lg {
+        top: 4px; }
+      .main-nav ul li i.icon-flask {
         top: 4px; }
       .main-nav ul li i.socicon {
         top: 11px;
@@ -743,7 +745,20 @@ body {
       float: left;
       text-align: center; }
       .dev-container .cell > div img {
-        max-width: 100%; }
+        max-width: 100%;
+        -webkit-transition: -webkit-transform 0.2s;
+        -moz-transition: -moz-transform 0.2s;
+        -o-transition: -o-transform 0.2s;
+        transition: transform 0.2s;
+        -webkit-transform: translate3d(0, 0, 0);
+        -moz-transform: translate3d(0, 0, 0);
+        -o-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0); }
+        .dev-container .cell > div img:hover {
+          -webkit-transform: translate3d(0, 0, 0) scale(1.1);
+          -moz-transform: translate3d(0, 0, 0) scale(1.1);
+          -o-transform: translate3d(0, 0, 0) scale(1.1);
+          transform: translate3d(0, 0, 0) scale(1.1); }
       .dev-container .cell > div h3 {
         font-weight: 300; }
       .dev-container .cell > div p {
@@ -761,6 +776,11 @@ body {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
   color: #ababab; }
+  .design-container h1 {
+    text-align: center;
+    font-weight: 200;
+    margin-top: 40px;
+    margin-bottom: 30px; }
   .design-container div {
     margin: 0 auto; }
   .design-container img {
@@ -770,3 +790,48 @@ body {
     width: -webkit-calc(33% - 20px);
     width: -moz-calc(33% - 20px);
     width: calc(33% - 20px); }
+
+.apps-container {
+  background: url('img/homebg.png');
+  background-size: cover;
+  color: #ababab;
+  overflow-y: scroll; }
+  .apps-container > div {
+    max-width: 1076px;
+    margin: 0 auto;
+    text-align: center; }
+  .apps-container h1 {
+    text-align: center;
+    font-weight: 200;
+    margin-top: 40px;
+    margin-bottom: 40px; }
+  .apps-container h3 {
+    font-weight: 300; }
+  .apps-container p {
+    max-width: 720px;
+    margin: 0 auto; }
+  .apps-container .iphone-vertical {
+    max-width: 284px; }
+
+.lab-container {
+  background: url('img/desk.png');
+  background-size: cover;
+  color: #ababab;
+  overflow-y: scroll; }
+  .lab-container h1 {
+    text-align: center;
+    font-weight: 200;
+    margin-top: 40px;
+    margin-bottom: 0px; }
+  .lab-container h3 {
+    font-weight: 300;
+    text-align: center;
+    margin-top: 0px;
+    margin-bottom: 40px; }
+  .lab-container .cell div {
+    width: -webkit-calc(33% - 20px);
+    width: -moz-calc(33% - 20px);
+    width: calc(33% - 20px);
+    margin-left: 20px;
+    margin-bottom: 20px;
+    float: left; }

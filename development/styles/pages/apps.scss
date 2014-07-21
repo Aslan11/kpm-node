@@ -1,0 +1,32 @@
+.apps-container{
+	background: url('img/homebg.png');
+	background-size: cover;
+	color: darken($white, 30%);
+	overflow-y: scroll;
+
+	>div{
+		max-width: 1076px;
+		margin: 0 auto;
+		text-align: center;
+	}
+	
+	h1{
+		text-align: center;
+		font-weight: 200;
+		margin-top: 40px;
+		margin-bottom: 40px;
+	}
+
+	h3{
+		font-weight: 300;
+	}
+
+	p{
+		max-width: 720px;
+		margin: 0 auto;
+	}
+
+	.iphone-vertical{
+		max-width: 284px;
+	}
+}

@@ -1,0 +1,29 @@
+.lab-container{
+	background: url('img/desk.png');
+	background-size: cover;
+	color: darken($white, 30%);
+	overflow-y: scroll;
+
+	h1{
+		text-align: center;
+		font-weight: 200;
+		margin-top: 40px;
+		margin-bottom: 0px;
+	}
+
+	h3{
+		font-weight: 300;
+		text-align: center;
+		margin-top: 0px;
+		margin-bottom: 40px;
+	}
+
+	.cell{
+		div{
+			width: calc(33% - 20px);
+			margin-left: 20px;
+			margin-bottom: 20px;
+			float: left;
+		}
+	}
+}

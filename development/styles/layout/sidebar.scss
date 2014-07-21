@@ -226,7 +226,7 @@
 					height: 1px;
 					background: $white;
 					position: absolute;
-					bottom: -2px;
+					bottom: -1px;
 					left: 0;
 					transition: width .3s;
 				}
@@ -255,6 +255,10 @@
 				top: 3px;
 
 				&.icon-grid-lg{
+					top: 4px;
+				}
+
+				&.icon-flask{
 					top: 4px;
 				}
 
