@@ -1,16 +1,14 @@
 .main-nav{
-	width: 51px;
+	width: 200px;
 	background: $dark-gray;
 	overflow: hidden;
 	position: absolute;
-	z-index: 9000;
+	z-index: 8000;
 	height: 100%;
 	top: 0;
 	left: 0;
-	transition: width .3s;
 
 	&:hover{
-		width: 200px;
 
 		.menu-trigger{
 

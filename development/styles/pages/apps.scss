@@ -4,29 +4,103 @@
 	color: darken($white, 30%);
 	overflow-y: scroll;
 
-	>div{
-		max-width: 1076px;
-		margin: 0 auto;
-		text-align: center;
-	}
-	
 	h1{
-		text-align: center;
 		font-weight: 200;
+		text-align: center;
 		margin-top: 40px;
-		margin-bottom: 40px;
 	}
 
 	h3{
 		font-weight: 300;
 	}
 
-	p{
-		max-width: 720px;
+	>div{
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		width: 80%;
+		height: 100%;
+		max-width: 1200px;
 		margin: 0 auto;
-	}
+		padding-top: 120px;
+		box-sizing: border-box;
 
-	.iphone-vertical{
-		max-width: 284px;
+		&.ibacc{
+			max-width: 514px;
+			>div{
+				width: 50%;
+				float: left;
+				height: 80%;
+
+				&.iphone{
+					background: url('img/iphone.png');
+					background-size: contain;
+					background-repeat: no-repeat;
+					background-position: center;
+					position: relative;
+
+					img{
+						position: absolute;
+						top: 0;
+						left: 0;
+						right: 0;
+						bottom: 0;
+						margin: auto;
+						width: 49%;
+					}
+				}
+
+				&.blurb{
+					>div{
+						position: relative;
+						top: 50%;
+						transform: translate3d(0,-50%,0);
+						padding-left: 20px;
+						box-sizing: border-box;
+					}
+				}
+			}
+		}
+
+		&.catnapper{
+			max-width: 664px;
+			>div{
+				width: 100%;
+				height: 50%;
+
+				&.iphone{
+					background: url('img/iphone-horizontal.png');
+					background-size: contain;
+					background-repeat: no-repeat;
+					background-position: center;
+					position: relative;
+
+					img{
+						position: absolute;
+						top: 0;
+						left: 0;
+						right: 0;
+						bottom: 0;
+						margin: auto;
+						width: 49%;
+					}
+				}
+
+				&.blurb{
+					>div{
+						position: relative;
+						top: 50%;
+						transform: translate3d(0,-50%,0);
+						padding-left: 20px;
+						box-sizing: border-box;
+					}
+				}
+			}
+		}
+
+		&:nth-of-type(2){
+			top: 100%;
+		}
 	}
 }

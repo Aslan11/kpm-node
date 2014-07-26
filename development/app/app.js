@@ -2,13 +2,6 @@
 ---------------------------------------------------------------------- */
 var app = angular.module('app', ['ngRoute', 'ngResource', 'ngAnimate', 'ngCookies', 'ngSanitize', 'ngTouch', 'ng']);
 
-/* Kill Animation on Load
----------------------------------------------------------------------- */
-setTimeout(function(){
-	var body = document.getElementsByTagName('body')[0];
-	body.className = '';
-}, 400);
-
 app.config(function($httpProvider, $routeProvider, $locationProvider){
 	$routeProvider.
 		when('/', {

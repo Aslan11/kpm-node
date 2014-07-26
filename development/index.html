@@ -61,9 +61,9 @@
 			<li><a href="/development" ng-class="{'active': currentView == 'development'}"><i class="icon-code"></i><span>Development</span></a></li>
 			<li><a href="/design" ng-class="{'active': currentView == 'design'}"><i class="icon-coverflow"></i><span>Design</span></a></li>
 			<li><a href="/apps" ng-class="{'active': currentView == 'apps'}"><i class="icon-grid-lg"></i><span>Apps</span></a></li>
-			<li><a href="/lab" ng-class="{'active': currentView == 'lab'}"><i class="icon-flask"></i><span>Lab</span></a></li>
+			<!-- <li><a href="/lab" ng-class="{'active': currentView == 'lab'}"><i class="icon-flask"></i><span>Lab</span></a></li> -->
 			<!-- <li><a><i class="icon-text-doc"></i><span>Blog</span></a></li> -->
-			<li><a href="/contact" ng-class="{'active': currentView == 'contact'}"><i class="icon-envelope"></i><span>Contact</span></a></li>
+			<li><a href="mailto:kvn.p.mrtn@gmail.com" target="_blank" ng-class="{'active': currentView == 'contact'}"><i class="icon-envelope"></i><span>Contact</span></a></li>
 			<li><a href="http://bit.ly/18PT9hI" target="_blank"><i class="icon-notepad"></i><span>Resumé</span></a></li>
 			<li><a href="http://github.com/aslan11" target="_blank"><i class="socicon">Q</i><span>Github</span></a></li>
 			<li><a href="http://dribbble.com/alucard11" target="_blank"><i class="socicon">D</i><span>Dribbble</span></a></li>
@@ -116,7 +116,7 @@
 			</div>
 		</section>
 		<section class="container design-container" ng-hide="currentView != 'design'">
-			<h1>Design Gallery</h1>
+			<h1>Gallery</h1>
 			<img src="styles/img/thanks.png" alt="">
 			<img src="styles/img/woofer.png" alt="">
 			<img src="styles/img/lava.png" alt="">
@@ -130,43 +130,24 @@
 		<section class="container apps-container" ng-hide="currentView != 'apps'">
 			<h1>iOS Apps</h1>
 			<div class="ibacc">
-				<div class="iphone">
-					<img src="styles/img/iphone.png" alt="" class="iphone-vertical">
-				</div>
-				<h3>iBACC</h3>
-				<p>iBACC was the first iPhone app I ever created. It is a very simple blood alcohol concentration calculator. I learned a tremendous amount about Adobe Phone-Gap and the App-Store process. This app was built using HTML, CSS3, and D3JS. Once running, I packaged it in a Phone-Gap wrapper and it was off to the store.</p>
-				<a class="download">Download Now</a>
-			</div>
-
-			<!-- <div class="cell">
-				<div class="ibacc">
-					<div class="blurb">
+				<div class="iphone"></div>
+				<div class="blurb">
+					<div>
 						<h3>iBACC</h3>
 						<p>iBACC was the first iPhone app I ever created. It is a very simple blood alcohol concentration calculator. I learned a tremendous amount about Adobe Phone-Gap and the App-Store process. This app was built using HTML, CSS3, and D3JS. Once running, I packaged it in a Phone-Gap wrapper and it was off to the store.</p>
 						<a class="download">Download Now</a>
+					</div>
+				</div>
+			</div>
+			<div class="catnapper">
+				<div class="iphone"></div>
+				<div class="blurb">
+					<div>
 						<h3>Cat Napper!</h3>
 						<p>Cat Napper! was my second iPhone app, however it was my first iPhone Game. I built this 2D infinite platformer using Unity Game Engine. Game development was really fun to dive into, and I also really enjoyed learning about apple's iAD program.</p>
 						<a class="download">Download Now</a>
 					</div>
-					<div class="iphone">
-						<img src="styles/img/iphone.png" alt="">
-						<img src="styles/img/iphone-horizontal.png" alt="">
-						<div class="screen"></div>
-					</div>
 				</div>
-			</div> -->
-		</section>
-		<section class="container lab-container" ng-hide="currentView != 'lab'">
-			<h1>The Lab</h1>
-			<h3>Experiments in Code</h3>
-			<div class="cell">
-				<p data-height="360" data-theme-id="6539" data-slug-hash="IxLDJ" data-default-tab="result" class='codepen'>See the Pen <a href='http://codepen.io/alucard11/pen/IxLDJ/'>Hexagonal Loading Animation (CSS3)</a> by Kevin Martin (<a href='http://codepen.io/alucard11'>@alucard11</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
-				<p data-height="360" data-theme-id="6539" data-slug-hash="KkFcp" data-default-tab="result" class='codepen'>See the Pen <a href='http://codepen.io/alucard11/pen/KkFcp/'>Diamond Progress Meter</a> by Kevin Martin (<a href='http://codepen.io/alucard11'>@alucard11</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
-				<p data-height="360" data-theme-id="6539" data-slug-hash="Gzjwn" data-default-tab="result" class='codepen'>See the Pen <a href='http://codepen.io/alucard11/pen/Gzjwn/'>iOS7 Record/Stop Button</a> by Kevin Martin (<a href='http://codepen.io/alucard11'>@alucard11</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
-				<p data-height="360" data-theme-id="6539" data-slug-hash="itDHB" data-default-tab="result" class='codepen'>See the Pen <a href='http://codepen.io/alucard11/pen/itDHB/'>Triangular Loading Bar CSS3</a> by Kevin Martin (<a href='http://codepen.io/alucard11'>@alucard11</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
-				<p data-height="360" data-theme-id="6539" data-slug-hash="jyGrC" data-default-tab="result" class='codepen'>See the Pen <a href='http://codepen.io/alucard11/pen/jyGrC/'>jyGrC</a> by Kevin Martin (<a href='http://codepen.io/alucard11'>@alucard11</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
-				<p data-height="360" data-theme-id="6539" data-slug-hash="amekH" data-default-tab="result" class='codepen'>See the Pen <a href='http://codepen.io/alucard11/pen/amekH/'>Hexagon Button</a> by Kevin Martin (<a href='http://codepen.io/alucard11'>@alucard11</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
-				<script async src="//codepen.io/assets/embed/ei.js"></script>
 			</div>
 		</section>
 	</div>

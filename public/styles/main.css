@@ -356,18 +356,9 @@ body {
   -moz-transform: translate3d(0, 0, 0);
   -o-transform: translate3d(0, 0, 0);
   transform: translate3d(0, 0, 0); }
-  body.kill-animations {
-    -webkit-transition: none !important;
-    -moz-transition: none !important;
-    -o-transition: none !important;
-    transition: none !important; }
-    body.kill-animations * {
-      -webkit-transition: none !important;
-      -moz-transition: none !important;
-      -o-transition: none !important;
-      transition: none !important; }
 
 .containers {
+  z-index: 9000;
   -webkit-transform-style: preserve-3d;
   transform-style: preserve-3d;
   -webkit-perspective: 1500;
@@ -376,12 +367,17 @@ body {
   -moz-transform: translate3d(0, 0, 0);
   -o-transform: translate3d(0, 0, 0);
   transform: translate3d(0, 0, 0);
-  -webkit-transition: -webkit-transform 0.4s;
-  -moz-transition: -moz-transform 0.4s;
-  -o-transition: -o-transform 0.4s;
-  transition: transform 0.4s;
+  -webkit-transition: -webkit-transform 0.3s;
+  -moz-transition: -moz-transform 0.3s;
+  -o-transition: -o-transform 0.3s;
+  transition: transform 0.3s;
   display: block;
-  height: 100%; }
+  height: 100%;
+  width: -webkit-calc(100% - 50px);
+  width: -moz-calc(100% - 50px);
+  width: calc(100% - 50px);
+  left: 50px;
+  position: relative; }
   .containers.shift {
     -webkit-transform: translate3d(150px, 0, 0);
     -moz-transform: translate3d(150px, 0, 0);
@@ -389,14 +385,12 @@ body {
     transform: translate3d(150px, 0, 0); }
 
 .container {
-  width: -webkit-calc(100% - 50px);
-  width: -moz-calc(100% - 50px);
-  width: calc(100% - 50px);
+  width: 100%;
   height: 100%;
   position: absolute;
   display: block;
   top: 0;
-  left: 50px;
+  left: 0;
   -webkit-transition: -webkit-transform 0.6s, opacity 0.6s;
   -moz-transition: -moz-transform 0.6s, opacity 0.6s;
   -o-transition: -o-transform 0.6s, opacity 0.6s;
@@ -434,61 +428,55 @@ body {
     opacity: 0; }
 
 .main-nav {
-  width: 51px;
+  width: 200px;
   background: #2D2D2D;
   overflow: hidden;
   position: absolute;
-  z-index: 9000;
+  z-index: 8000;
   height: 100%;
   top: 0;
-  left: 0;
-  -webkit-transition: width 0.3s;
-  -moz-transition: width 0.3s;
-  -o-transition: width 0.3s;
-  transition: width 0.3s; }
-  .main-nav:hover {
-    width: 200px; }
-    .main-nav:hover .menu-trigger > div.left {
-      -webkit-transform: translate3d(46px, 0, 0);
-      -moz-transform: translate3d(46px, 0, 0);
-      -o-transform: translate3d(46px, 0, 0);
-      transform: translate3d(46px, 0, 0); }
-      .main-nav:hover .menu-trigger > div.left .micro-plus {
-        -webkit-transform: translate3d(1px, -1px, 0);
-        -moz-transform: translate3d(1px, -1px, 0);
-        -o-transform: translate3d(1px, -1px, 0);
-        transform: translate3d(1px, -1px, 0); }
-        .main-nav:hover .menu-trigger > div.left .micro-plus:nth-of-type(2) {
-          -webkit-transform: translate3d(26px, -1px, 0);
-          -moz-transform: translate3d(26px, -1px, 0);
-          -o-transform: translate3d(26px, -1px, 0);
-          transform: translate3d(26px, -1px, 0); }
-        .main-nav:hover .menu-trigger > div.left .micro-plus:nth-of-type(3) {
-          -webkit-transform: translate3d(1px, 25px, 0);
-          -moz-transform: translate3d(1px, 25px, 0);
-          -o-transform: translate3d(1px, 25px, 0);
-          transform: translate3d(1px, 25px, 0); }
-        .main-nav:hover .menu-trigger > div.left .micro-plus:nth-of-type(4) {
-          -webkit-transform: translate3d(26px, 25px, 0);
-          -moz-transform: translate3d(26px, 25px, 0);
-          -o-transform: translate3d(26px, 25px, 0);
-          transform: translate3d(26px, 25px, 0); }
-      .main-nav:hover .menu-trigger > div.left .trigram .bar {
-        opacity: 0; }
-      .main-nav:hover .menu-trigger > div.left .k {
-        opacity: 1; }
-    .main-nav:hover .menu-trigger > div.middle {
-      opacity: 1;
-      -webkit-transform: translate3d(73px, 0, 0);
-      -moz-transform: translate3d(73px, 0, 0);
-      -o-transform: translate3d(73px, 0, 0);
-      transform: translate3d(73px, 0, 0); }
-    .main-nav:hover .menu-trigger > div.right {
-      opacity: 1;
-      -webkit-transform: translate3d(100px, 0, 0);
-      -moz-transform: translate3d(100px, 0, 0);
-      -o-transform: translate3d(100px, 0, 0);
-      transform: translate3d(100px, 0, 0); }
+  left: 0; }
+  .main-nav:hover .menu-trigger > div.left {
+    -webkit-transform: translate3d(46px, 0, 0);
+    -moz-transform: translate3d(46px, 0, 0);
+    -o-transform: translate3d(46px, 0, 0);
+    transform: translate3d(46px, 0, 0); }
+    .main-nav:hover .menu-trigger > div.left .micro-plus {
+      -webkit-transform: translate3d(1px, -1px, 0);
+      -moz-transform: translate3d(1px, -1px, 0);
+      -o-transform: translate3d(1px, -1px, 0);
+      transform: translate3d(1px, -1px, 0); }
+      .main-nav:hover .menu-trigger > div.left .micro-plus:nth-of-type(2) {
+        -webkit-transform: translate3d(26px, -1px, 0);
+        -moz-transform: translate3d(26px, -1px, 0);
+        -o-transform: translate3d(26px, -1px, 0);
+        transform: translate3d(26px, -1px, 0); }
+      .main-nav:hover .menu-trigger > div.left .micro-plus:nth-of-type(3) {
+        -webkit-transform: translate3d(1px, 25px, 0);
+        -moz-transform: translate3d(1px, 25px, 0);
+        -o-transform: translate3d(1px, 25px, 0);
+        transform: translate3d(1px, 25px, 0); }
+      .main-nav:hover .menu-trigger > div.left .micro-plus:nth-of-type(4) {
+        -webkit-transform: translate3d(26px, 25px, 0);
+        -moz-transform: translate3d(26px, 25px, 0);
+        -o-transform: translate3d(26px, 25px, 0);
+        transform: translate3d(26px, 25px, 0); }
+    .main-nav:hover .menu-trigger > div.left .trigram .bar {
+      opacity: 0; }
+    .main-nav:hover .menu-trigger > div.left .k {
+      opacity: 1; }
+  .main-nav:hover .menu-trigger > div.middle {
+    opacity: 1;
+    -webkit-transform: translate3d(73px, 0, 0);
+    -moz-transform: translate3d(73px, 0, 0);
+    -o-transform: translate3d(73px, 0, 0);
+    transform: translate3d(73px, 0, 0); }
+  .main-nav:hover .menu-trigger > div.right {
+    opacity: 1;
+    -webkit-transform: translate3d(100px, 0, 0);
+    -moz-transform: translate3d(100px, 0, 0);
+    -o-transform: translate3d(100px, 0, 0);
+    transform: translate3d(100px, 0, 0); }
   .main-nav .menu-trigger {
     position: absolute;
     height: 50px;
@@ -780,7 +768,7 @@ body {
     text-align: center;
     font-weight: 200;
     margin-top: 40px;
-    margin-bottom: 30px; }
+    margin-bottom: 20px; }
   .design-container div {
     margin: 0 auto; }
   .design-container img {
@@ -796,42 +784,82 @@ body {
   background-size: cover;
   color: #ababab;
   overflow-y: scroll; }
-  .apps-container > div {
-    max-width: 1076px;
-    margin: 0 auto;
-    text-align: center; }
   .apps-container h1 {
-    text-align: center;
     font-weight: 200;
-    margin-top: 40px;
-    margin-bottom: 40px; }
+    text-align: center;
+    margin-top: 40px; }
   .apps-container h3 {
     font-weight: 300; }
-  .apps-container p {
-    max-width: 720px;
-    margin: 0 auto; }
-  .apps-container .iphone-vertical {
-    max-width: 284px; }
-
-.lab-container {
-  background: url('img/desk.png');
-  background-size: cover;
-  color: #ababab;
-  overflow-y: scroll; }
-  .lab-container h1 {
-    text-align: center;
-    font-weight: 200;
-    margin-top: 40px;
-    margin-bottom: 0px; }
-  .lab-container h3 {
-    font-weight: 300;
-    text-align: center;
-    margin-top: 0px;
-    margin-bottom: 40px; }
-  .lab-container .cell div {
-    width: -webkit-calc(33% - 20px);
-    width: -moz-calc(33% - 20px);
-    width: calc(33% - 20px);
-    margin-left: 20px;
-    margin-bottom: 20px;
-    float: left; }
+  .apps-container > div {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 80%;
+    height: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-top: 120px;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box; }
+    .apps-container > div.ibacc {
+      max-width: 514px; }
+      .apps-container > div.ibacc > div {
+        width: 50%;
+        float: left;
+        height: 80%; }
+        .apps-container > div.ibacc > div.iphone {
+          background: url('img/iphone.png');
+          background-size: contain;
+          background-repeat: no-repeat;
+          background-position: center;
+          position: relative; }
+          .apps-container > div.ibacc > div.iphone img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            margin: auto;
+            width: 49%; }
+        .apps-container > div.ibacc > div.blurb > div {
+          position: relative;
+          top: 50%;
+          -webkit-transform: translate3d(0, -50%, 0);
+          -moz-transform: translate3d(0, -50%, 0);
+          -o-transform: translate3d(0, -50%, 0);
+          transform: translate3d(0, -50%, 0);
+          padding-left: 20px;
+          -moz-box-sizing: border-box;
+          box-sizing: border-box; }
+    .apps-container > div.catnapper {
+      max-width: 664px; }
+      .apps-container > div.catnapper > div {
+        width: 100%;
+        height: 50%; }
+        .apps-container > div.catnapper > div.iphone {
+          background: url('img/iphone-horizontal.png');
+          background-size: contain;
+          background-repeat: no-repeat;
+          background-position: center;
+          position: relative; }
+          .apps-container > div.catnapper > div.iphone img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            margin: auto;
+            width: 49%; }
+        .apps-container > div.catnapper > div.blurb > div {
+          position: relative;
+          top: 50%;
+          -webkit-transform: translate3d(0, -50%, 0);
+          -moz-transform: translate3d(0, -50%, 0);
+          -o-transform: translate3d(0, -50%, 0);
+          transform: translate3d(0, -50%, 0);
+          padding-left: 20px;
+          -moz-box-sizing: border-box;
+          box-sizing: border-box; }
+    .apps-container > div:nth-of-type(2) {
+      top: 100%; }

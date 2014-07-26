@@ -50,7 +50,7 @@ gulp.task('default', [
 	// HTML Files
 	gulp.watch([
 		'development/index.html', 
-		'development/templates/**/*.html'
+		'development/views/*.html'
 	], function() {
 		gulp.run('html');
 	});
@@ -149,10 +149,10 @@ gulp.task('html', function() {
 		.pipe(gulp.dest('public'));
 
 	// Angular Template Files
-	gulp.src('development/templates/**/*.html')
+	gulp.src('development/views/*.html')
 		.pipe(angularHTMLify())
 		// .pipe(minifyHTML())
-		.pipe(gulp.dest('public/templates'));
+		.pipe(gulp.dest('public/views'));
 });
 
 
