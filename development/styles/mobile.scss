@@ -4,12 +4,12 @@
 @import 'base/typography';
 
 .header{
-	height: 90px;
+	height: 45px;
 	background: $dark-gray;
 
 	img{
 		display: block;
-		width: 200px;
+		width: 100px;
 		position: absolute;
 		margin: 0 auto;
 		left: 0;
@@ -20,9 +20,9 @@
 
 .content{
 	width: 100%;
-	height: calc(100% - 90px);
+	height: calc(100% - 45px);
 	position: absolute;
-	top: 90px;
+	top: 45px;
 	left: 0;
 	background: $light-gray;
 	overflow-y: scroll;
@@ -30,7 +30,7 @@
 
 .card{
 	height: 180px;
-	width: calc(100% - 20px);
+	width: calc(100% - 10px);
 	margin: 0 auto;
 	margin-top: 10px;
 	background: darken($white, 10%);
@@ -42,9 +42,9 @@
 
 	h3{
 		display: block;
-		width: calc(100% - 180px);
+		width: calc(100% - 90px);
 		position: absolute;
-		left: 180px;
+		left: 90px;
 		padding-left: 16px;
 		padding-bottom: 8px;
 		top: -16px;
@@ -67,8 +67,8 @@
 
 
 	i{
-		width:  180px;
-		height: 180px;
+		width:  90px;
+		height: 90px;
 		background: $gray;
 		display: block;
 		position: absolute;
