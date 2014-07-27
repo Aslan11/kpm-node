@@ -398,10 +398,10 @@ body {
     height: -moz-calc(100% - 38px);
     height: calc(100% - 38px);
     left: 98px;
-    top: 20px;
+    top: 22px;
     overflow: hidden;
     font-size: 12px;
-    line-height: 18px; }
+    line-height: 17px; }
   .card i {
     width: 90px;
     height: 90px;
