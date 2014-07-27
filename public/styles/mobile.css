@@ -347,7 +347,7 @@ p {
     margin: 0 auto;
     left: 0;
     right: 0;
-    top: 4px; }
+    top: 2px; }
 
 .content {
   width: 100%;
@@ -389,13 +389,13 @@ p {
   .card p {
     display: block;
     position: absolute;
-    width: -webkit-calc(100% - 210px);
-    width: -moz-calc(100% - 210px);
-    width: calc(100% - 210px);
-    height: -webkit-calc(100% - 76px);
-    height: -moz-calc(100% - 76px);
-    height: calc(100% - 76px);
-    left: 196px;
+    width: -webkit-calc(100% - 105px);
+    width: -moz-calc(100% - 105px);
+    width: calc(100% - 105px);
+    height: -webkit-calc(100% - 38px);
+    height: -moz-calc(100% - 38px);
+    height: calc(100% - 38px);
+    left: 98px;
     top: 50px;
     overflow: hidden;
     text-overflow: ellipsis; }
@@ -407,11 +407,11 @@ p {
     position: absolute;
     top: 0;
     left: 0;
-    font-size: 100px;
+    font-size: 50px;
     text-align: center;
     color: #73F3B6;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
-    padding-top: 32px; }
+    padding-top: 16px; }
     .card i.icon-grid-lg {
-      padding-top: 40px; }
+      padding-top: 20px; }

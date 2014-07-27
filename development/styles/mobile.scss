@@ -14,7 +14,7 @@
 		margin: 0 auto;
 		left: 0;
 		right: 0;
-		top: 4px;
+		top: 2px;
 	}
 }
 
@@ -56,9 +56,9 @@
 	p{
 		display: block;
 		position: absolute;
-		width: calc(100% - 210px);
-		height: calc(100% - 76px);
-		left: 196px;
+		width: calc(100% - 105px);
+		height: calc(100% - 38px);
+		left: 98px;
 		top: 50px;
 		overflow: hidden;
 		text-overflow: ellipsis;
@@ -74,14 +74,14 @@
 		position: absolute;
 		top: 0;
 		left: 0;
-		font-size: 100px;
+		font-size: 50px;
 		text-align: center;
 		color: $mint;
 		box-sizing: border-box;
-		padding-top: 32px;
+		padding-top: 16px;
 
 		&.icon-grid-lg{
-			padding-top: 40px;
+			padding-top: 20px;
 		}
 
 
