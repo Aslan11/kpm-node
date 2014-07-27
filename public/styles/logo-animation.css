@@ -173,7 +173,7 @@ body .plus.plus-four {
   -moz-animation: plus-four-animation 10s;
   animation: plus-four-animation 10s; }
 
-body .k {
+body .shot .k {
   position: absolute;
   top: 258px;
   right: 396px;
@@ -183,7 +183,7 @@ body .k {
   -moz-animation: k-animation 10s;
   animation: k-animation 10s; }
 
-body .p {
+body .shot .p {
   position: absolute;
   top: 258px;
   left: 0;
@@ -193,7 +193,7 @@ body .p {
   -moz-animation: p-animation 10s;
   animation: p-animation 10s; }
 
-body .m {
+body .shot .m {
   position: absolute;
   top: 258px;
   left: 396px;
