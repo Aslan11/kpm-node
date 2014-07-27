@@ -21,8 +21,8 @@
 	<link rel="stylesheet" href="/styles/logo-animation.css">
 </head>
 <body ng-controller="mainController" class="kill-animations" resize>
-	<ng-include src="'views/mobile.html'" ng-show="browserType == 'mobile'" ></ng-include>
-	<ng-include src="'views/desktop.html'" ng-show="browserType == 'desktop'" ></ng-include>
+	<ng-include src="'views/mobile.html'" ng-show="browserType == 'mobile'" ng-controller="mobileController" ></ng-include>
+	<ng-include src="'views/desktop.html'" ng-show="browserType == 'desktop'"></ng-include>
 	<!-- Scripts -->
 	<script src="/scripts/vendor.js"></script>
 	<script src="/scripts/app.js"></script>

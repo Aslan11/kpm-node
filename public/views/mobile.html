@@ -3,30 +3,67 @@
 	<img src="styles/img/logo.png" alt="">
 </div>
 <div class="content">
-	<div class="card about">
+	<div class="card about" data-ng-class="{'active': aboutActive}" data-ng-click="aboutToggle()">
 		<i class="icon-id-card"></i>
 		<h3>About</h3>
-		<p>In 2012 after finishing The Starter League in Chicago, I embarked on my professonial career...</p>
+		<p>In 2012 I studied Web Development at The Starter League, an intense programming boot camp. While there I honed the skill-set of a digital craftsman. Skills like HTML5, CSS3, Ruby on Rails, Javascript, and jQuery have allowed me to work on a multitude of different projects designed for various platforms. I am well accustomed to the challenges of Cross-Browser Quirks, Responsive Development, Mobile Development, and International Development. Working as a professional in the web industry these last few years has opened my eyes to a lot, and I'm reminded every day that I'm never done learning. Most recently I've been diving into new exciting javascript technologies such as AngularJS, ExpressJS, and NodeJS. I want to continue to contribute to making the web a better tool for humanity.</p>
 	</div>
-	<div class="card development">
+	<div class="card dev" data-ng-class="{'active': devActive}" data-ng-click="devToggle()">
 		<i class="icon-code"></i>
 		<h3>Development</h3>
-		<p>Working at top companies like CreativeDash has allowed me to work on many exciting projects...</p>
+		<div>
+			<a href="http://ui8.net" target="_blank"><img src="styles/img/ui8.png" alt="UI8"></a>
+			<h3>UI8</h3>
+			<p class="blurb">
+				UI8 is the asset store operated by the team at Creativedash. During my time there, the senior developer and myself built a brand new node-based e-commerce platform. It was our first node/angular endeavour and I learned a tremendous amount about these exciting new javascript technologies. This site made it to the awwwards where it received an honorable mention.
+			</p>
+		</div>
+		<div>
+			<a href="http://taiocruz.com" target="_blank"><img src="styles/img/taio.png" alt="Taio Cruz"></a>
+			<h3>TAIO CRUZ</h3>
+			<p class="blurb">
+				While working at Creativedash, Jacob "Taio" Cruz hired us to re-do his personal site. After getting some hot PSD's from the creative director, I built this site using php, jQuery, and Wordpress. It was funny re-visiting an old technology like php after having a great time in the new node/angular world. 
+			</p>
+		</div>
+		<div>
+			<a href="http://pinmsg.com" target="_blank"><img src="styles/img/pinmsg.png" alt="PinMsg"></a>
+			<h3>PINMSG</h3>
+			<p class="blurb">
+				Pinmsg is another client I worked with during my time at Creativedash. I really enjoyed this website because of the slick animations and page transitions. This was the first controlled scrolling site I worked on, and I had a blast animating each slide. HTML5 videos for the screen content was the icing on the cake.
+			</p>
+		</div>
 	</div>
-	<div class="card design">
+	<div class="card design" data-ng-class="{'active': designActive}" data-ng-click="designToggle()">
 		<i class="icon-coverflow"></i>
 		<h3>Design</h3>
-		<p>I'm a developer first, but every now and then I like to muse around with graphic design...</p>
+		<img src="styles/img/thanks.png" alt="">
+		<img src="styles/img/woofer.png" alt="">
+		<img src="styles/img/lava.png" alt="">
+		<img src="styles/img/et.png" alt="">
+		<img src="styles/img/command.png" alt="">
+		<img src="styles/img/luxx.png" alt="">
+		<img src="styles/img/turntable.png" alt="">
+		<img src="styles/img/sync.png" alt="">
+		<img src="styles/img/spacetime.png" alt="">
 	</div>
-	<div class="card apps">
+	<div class="card apps" data-ng-class="{'active': appsActive}" data-ng-click="appsToggle()">
 		<i class="icon-grid-lg"></i>
 		<h3>Apps</h3>
-		<p>This year I stepped out of my comfort zone and made two iOS apps...</p>
+		<div>
+			<img src="styles/img/iphone.png" alt="iBACC">
+			<h3>iBACC</h3>
+			<p>iBACC was the first iPhone app I ever created. It is a very simple blood alcohol concentration calculator. I learned a tremendous amount about Adobe Phone-Gap and the App-Store process. This app was built using HTML, CSS3, and D3JS. Once running, I packaged it in a Phone-Gap wrapper and it was off to the store.</p>
+			<a class="download" href="https://itunes.apple.com/us/app/ibacc/id803749885?ls=1&mt=8">Download Now</a>
+		</div>
+		<div>
+			<img src="styles/img/iphone-horizontal.png" alt="CatNapper!">
+			<h3>Cat Napper!</h3>
+			<p>Cat Napper! was my second iPhone app, however it was my first iPhone Game. I built this 2D infinite platformer using Unity Game Engine. Game development was really fun to dive into, and I also really enjoyed learning about apple's iAD program.</p>
+			<a class="download" href="https://itunes.apple.com/us/app/cat-napper!/id827227417?ls=1&mt=8">Download Now</a>
+		</div>
 	</div>
-	<div class="card contact">
+	<a href="mailto:kvn.p.mrtn@gmail.com"><div class="card contact">
 		<i class="icon-envelope"></i>
-		<i class="socicon">Q</i>
-		<i class="socicon">D</i>
-		<i class="socicon">j</i>
-	</div>
+		<h3>Contact</h3>
+	</div></a>
 </div>

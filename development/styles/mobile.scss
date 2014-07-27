@@ -27,6 +27,7 @@ body{
 	height: calc(100% - 45px);
 	position: absolute;
 	top: 45px;
+	padding-bottom: 20px;
 	left: 0;
 	background: $light-gray;
 	overflow-y: scroll;
@@ -34,35 +35,46 @@ body{
 }
 
 .card{
-	height: 90px;
 	width: calc(100% - 20px);
 	margin: 0 auto;
 	margin-top: 14px;
 	background: darken($white, 10%);
-	border-radius: 4px;
+	min-height: 32px;
 	color: $gray;
 	position: relative;
 	box-shadow: 0px 4px 0px rgba(0,0,0,0.4);
+	cursor: pointer;
+	
 
-	h3{
-		display: block;
-		width: calc(100% - 98px);
+	&:after{
+		content: '';
+		width: 100%;
+		height: 1px;
 		position: absolute;
-		left: 90px;
+		background: $mint;
+		top: 90px;
+		opacity: 0;
+	}
+
+	>h3{
+		display: block;
+		width: calc(100% - 40px);
+		position: absolute;
+		left: 32px;
 		padding-left: 8px;
-		padding-bottom: 4px;
+		padding-bottom: 5px;
 		top: -16px;
 		font-size: 18px;
 		font-weight: 300;
 		border-bottom: 1px solid $gray;
 	}
 
-	p{
-		position: absolute;
-		width: calc(100% - 105px);
-		height: calc(100% - 38px);
-		left: 98px;
-		top: 22px;
+	>p{
+		position: relative;
+		width: 90%;
+		left: 10px;
+		padding-top: 40px;
+		padding-bottom: 10px;
 		overflow: hidden;
 		font-size: 12px;
 		line-height: 17px;
@@ -70,26 +82,160 @@ body{
 
 
 
-	i{
-		width:  90px;
-		height: 90px;
+	>i{
+		width:  32px;
+		height: 32px;
 		background: $gray;
 		display: block;
 		position: absolute;
 		top: 0;
 		left: 0;
-		font-size: 50px;
+		font-size: 18px;
 		text-align: center;
 		color: $mint;
 		box-sizing: border-box;
-		padding-top: 16px;
-		border-top-left-radius: 3px;
-		border-bottom-left-radius: 3px;
+		padding-top: 6px;
 
 		&.icon-grid-lg{
-			padding-top: 20px;
+			padding-top: 8px;
 		}
 
 
+	}
+
+	&.about{
+		max-height: 32px;
+		transform: translate3d(0,0,0);
+		transition: max-height .3s;
+		&.active{
+			max-height: 500px;
+		}
+		p{
+			opacity: 0;
+			transition: opacity .3s;
+		}
+
+		&.active{
+			p{
+				opacity: 1;
+			}
+		}
+	}
+
+	&.dev{
+		max-height: 32px;
+		transform: translate3d(0,0,0);
+		transition: max-height .3s;
+		overflow: hidden;
+
+		&.active{
+			max-height: 2000px;
+		}
+
+		>div{
+			width: 90%;
+			margin: 0 auto;
+			margin-bottom: 40px;
+			text-align: center;
+
+			h3{
+				font-weight: 300;
+			}
+
+			&:nth-of-type(1){
+				padding-top: 60px;
+			}
+
+			&:last-of-type{
+				padding-bottom: 30px;
+			}
+
+		}
+
+		img{
+			max-width: 80%;
+			margin: 0 auto;
+			display: block;
+		}
+	}
+
+	&.apps{
+		max-height: 32px;
+		transform: translate3d(0,0,0);
+		transition: max-height .3s;
+		overflow: hidden;
+
+		.download{
+			color: $gray;
+			transition: color .3s, border .3s;
+			border: 1px solid $gray;
+			display: block;
+			text-align: center;
+			width: 140px;
+			padding: 8px 0 10px 0;
+			border-radius: 4px;
+			margin: 0 auto;
+			margin-top: 28px;
+			transform: translate3d(0,0,0);
+
+			&:hover{
+				color: $white;
+				border: 1px solid $white;
+			}
+		}
+
+		&.active{
+			max-height: 2000px;
+		}
+
+		>div{
+			width: 90%;
+			margin: 0 auto;
+			margin-bottom: 40px;
+			text-align: center;
+
+			h3{
+				font-weight: 300;
+			}
+
+			&:nth-of-type(1){
+				padding-top: 60px;
+			}
+
+			&:last-of-type{
+				padding-bottom: 30px;
+			}
+
+		}
+
+		img{
+			max-width: 80%;
+			margin: 0 auto;
+			display: block;
+		}
+	}
+
+	&.design{
+		max-height: 32px;
+		transform: translate3d(0,0,0);
+		transition: max-height .3s;
+		overflow: hidden;
+
+		img{
+			max-width: 90%;
+			display: block;
+			margin: 0 auto;
+			margin-top: 20px;
+
+			&:first-of-type{
+				margin-top: 54px;
+			}
+		}
+
+		&.active{
+			max-height: 416px;
+			overflow-y: scroll;
+			padding-bottom: 20px;
+		}
 	}
 }
