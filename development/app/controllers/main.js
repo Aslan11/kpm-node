@@ -9,8 +9,4 @@ app.controller('mainController', function($scope, $rootScope, $location, $route,
 
 	//Menu Hover?
 	$scope.menuHover = false;
-
-	goHome = function(){
-		console.log('hello');
-	};
 });

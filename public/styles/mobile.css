@@ -376,7 +376,8 @@ body {
   color: #3D3D3D;
   position: relative;
   box-shadow: 0px 4px 0px rgba(0, 0, 0, 0.4);
-  cursor: pointer; }
+  cursor: pointer;
+  -webkit-touch-callout: none; }
   .card:after {
     content: '';
     width: 100%;
@@ -421,8 +422,9 @@ body {
     -moz-box-sizing: border-box;
     box-sizing: border-box;
     padding-top: 6px; }
-    .card > i.icon-grid-lg {
-      padding-top: 8px; }
+    .card > i.socicon {
+      font-size: 14px !important;
+      padding-top: 10px; }
   .card.about {
     max-height: 32px;
     -webkit-transform: translate3d(0, 0, 0);
@@ -539,6 +541,5 @@ body {
       .card.design img:first-of-type {
         margin-top: 54px; }
     .card.design.active {
-      max-height: 416px;
-      overflow-y: scroll;
+      max-height: 4000px;
       padding-bottom: 20px; }

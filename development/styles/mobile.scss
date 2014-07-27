@@ -44,6 +44,7 @@ body{
 	position: relative;
 	box-shadow: 0px 4px 0px rgba(0,0,0,0.4);
 	cursor: pointer;
+	-webkit-touch-callout: none;
 	
 
 	&:after{
@@ -96,10 +97,10 @@ body{
 		box-sizing: border-box;
 		padding-top: 6px;
 
-		&.icon-grid-lg{
-			padding-top: 8px;
+		&.socicon{
+			font-size: 14px !important;
+			padding-top: 10px;
 		}
-
 
 	}
 
@@ -233,8 +234,7 @@ body{
 		}
 
 		&.active{
-			max-height: 416px;
-			overflow-y: scroll;
+			max-height: 4000px;
 			padding-bottom: 20px;
 		}
 	}

@@ -1,6 +1,6 @@
 /*	Define Angular App
 ---------------------------------------------------------------------- */
-var app = angular.module('app', ['ngRoute', 'ngResource', 'ngAnimate', 'ngCookies', 'ngSanitize', 'ngTouch', 'ng']);
+var app = angular.module('app', ['ngRoute', 'ngResource', 'ngAnimate', 'ngCookies', 'ngSanitize', 'ngTouch']);
 
 app.config(function($httpProvider, $routeProvider, $locationProvider){
 	$routeProvider.
