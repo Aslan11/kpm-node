@@ -337,6 +337,9 @@ p {
   font-weight: 300;
   line-height: 1.8em; }
 
+body {
+  overflow: hidden !important; }
+
 .header {
   height: 45px;
   background: #2D2D2D; }
@@ -358,7 +361,8 @@ p {
   top: 45px;
   left: 0;
   background: #555555;
-  overflow-y: scroll; }
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch; }
 
 .card {
   height: 180px;

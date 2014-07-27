@@ -3,6 +3,10 @@
 @import 'base/colors';
 @import 'base/typography';
 
+body{
+	overflow: hidden !important;
+}
+
 .header{
 	height: 45px;
 	background: $dark-gray;
@@ -26,6 +30,7 @@
 	left: 0;
 	background: $light-gray;
 	overflow-y: scroll;
+	-webkit-overflow-scrolling: touch;
 }
 
 .card{
