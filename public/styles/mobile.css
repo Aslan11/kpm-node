@@ -424,7 +424,7 @@ body {
     padding-top: 6px; }
     .card > i.socicon {
       font-size: 14px !important;
-      padding-top: 10px; }
+      padding-top: 8px; }
   .card.about {
     max-height: 32px;
     -webkit-transform: translate3d(0, 0, 0);
