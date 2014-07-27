@@ -7,23 +7,26 @@
 	.cell{
 		max-width: 1076px;
 		width: 80%;
+		position: relative;
 		margin: 0 auto;
-		margin-top: 20px;
+		top: 50%;
+		transform: translate3d(0,-50%,0);
 
 		h1{
 			text-align: center;
 			font-weight: 200;
 			margin-bottom: 40px;
-			margin-top: 40px;
-
+			margin-top: 0;
 		}
 
 
 
 		>div{
-			width: calc(33.33333% - 28px);
-			float: left;
+			width: calc(33.33333% - 30px);
+			display: inline-block;
 			text-align: center;
+			vertical-align: top;
+
 
 			img{
 				max-width: 100%;
@@ -48,6 +51,28 @@
 				margin-left: 40px;
 				margin-right: 40px;
 			}
+		}
+	}
+
+	@media screen and (max-height: 630px){
+		.cell{
+			position: absolute;
+			top: 40px;
+			transform: translate3d(0,0,0);
+			left: 0;
+			right: 0;
+			padding-bottom: 80px;
+		}
+	}
+
+	@media screen and (max-width: 860px){
+		.cell{
+			position: absolute;
+			top: 40px;
+			transform: translate3d(0,0,0);
+			left: 0;
+			right: 0;
+			padding-bottom: 80px;
 		}
 	}
 }

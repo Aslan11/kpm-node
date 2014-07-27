@@ -1,0 +1,89 @@
+// Base
+@import 'base/normalize';
+@import 'base/colors';
+@import 'base/typography';
+
+.header{
+	height: 90px;
+	background: $dark-gray;
+
+	img{
+		display: block;
+		width: 200px;
+		position: absolute;
+		margin: 0 auto;
+		left: 0;
+		right: 0;
+		top: 4px;
+	}
+}
+
+.content{
+	width: 100%;
+	height: calc(100% - 90px);
+	position: absolute;
+	top: 90px;
+	left: 0;
+	background: $light-gray;
+	overflow-y: scroll;
+}
+
+.card{
+	height: 180px;
+	width: calc(100% - 20px);
+	margin: 0 auto;
+	margin-top: 10px;
+	background: darken($white, 10%);
+	border-radius: 4px;
+	overflow: hidden;
+	color: $gray;
+	position: relative;
+	box-shadow: 0px 4px 0px rgba(0,0,0,0.2);
+
+	h3{
+		display: block;
+		width: calc(100% - 180px);
+		position: absolute;
+		left: 180px;
+		padding-left: 16px;
+		padding-bottom: 8px;
+		top: -16px;
+		font-size: 24px;
+		font-weight: 300;
+		border-bottom: 1px solid $gray;
+	}
+
+	p{
+		display: block;
+		position: absolute;
+		width: calc(100% - 210px);
+		height: calc(100% - 76px);
+		left: 196px;
+		top: 50px;
+		overflow: hidden;
+		text-overflow: ellipsis;
+	}
+
+
+
+	i{
+		width:  180px;
+		height: 180px;
+		background: $gray;
+		display: block;
+		position: absolute;
+		top: 0;
+		left: 0;
+		font-size: 100px;
+		text-align: center;
+		color: $mint;
+		box-sizing: border-box;
+		padding-top: 32px;
+
+		&.icon-grid-lg{
+			padding-top: 40px;
+		}
+
+
+	}
+}

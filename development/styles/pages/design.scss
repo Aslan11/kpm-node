@@ -24,4 +24,16 @@
 		margin-top: 20px;
 		width: calc(33% - 20px);
 	}
+
+	@media screen and (min-width: 1400px){
+		img{
+			width: calc(25% - 20px);
+		}
+	}
+
+	@media screen and (min-width: 1600px){
+		img{
+			width: calc(20% - 20px);
+		}
+	}
 }

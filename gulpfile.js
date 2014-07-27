@@ -27,7 +27,9 @@ gulp.task('default', [
 	'jshint', 
 	'vendorScripts', 
 	'appScripts', 
-	'styles', 
+	'styles',
+	'styles-mobile',
+	'styles-logo', 
 	'cssImages',
 	'html'
 ], function(){
@@ -40,6 +42,8 @@ gulp.task('default', [
 	// Sass Files
 	gulp.watch('development/styles/**/*', function(){
 		gulp.run('styles');
+		gulp.run('styles-mobile');
+		gulp.run('styles-logo');
 	});
 	
 	// CSS Images
@@ -124,6 +128,36 @@ gulp.task('styles', function() {
 	// Process CSS images
 	gulp.src('development/styles/img/*').
 		pipe(gulp.dest('public/styles/img/'));
+});
+
+gulp.task('styles-mobile', function() {
+	// Process SASS
+	gulp.src('development/styles/mobile.scss')
+		.pipe(sass({
+			onError: function(e) {
+				return notify().write(e);
+			}
+		}))
+		.pipe(autoprefixer('last 2 versions', 'ie 9', 'safari 5.1', 'chrome 15', 'opera 11', 'firefox 7'))
+		// .pipe(minifyCSS())
+		.pipe(gulp.dest('public/styles/'))
+		.pipe(livereload({auto: true}));
+
+});
+
+gulp.task('styles-logo', function() {
+	// Process SASS
+	gulp.src('development/styles/logo-animation.scss')
+		.pipe(sass({
+			onError: function(e) {
+				return notify().write(e);
+			}
+		}))
+		.pipe(autoprefixer('last 2 versions', 'ie 9', 'safari 5.1', 'chrome 15', 'opera 11', 'firefox 7'))
+		// .pipe(minifyCSS())
+		.pipe(gulp.dest('public/styles/'))
+		.pipe(livereload({auto: true}));
+
 });
 
 

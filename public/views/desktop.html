@@ -1,0 +1,173 @@
+<link rel="stylesheet" href="/styles/main.css">
+<!-- Main Navigation -->
+<nav class="main-nav" data-ng-mouseover="menuHover = true;" data-ng-mouseleave="menuHover = false;">
+	<a href="/">
+		<figure class="menu-trigger">
+			<div class="left">
+				<figure class="micro-plus">
+					<div class="bar"></div>
+					<div class="bar"></div>
+				</figure>
+				<figure class="micro-plus">
+					<div class="bar"></div>
+					<div class="bar"></div>
+				</figure>
+				<figure class="micro-plus">
+					<div class="bar"></div>
+					<div class="bar"></div>
+				</figure>
+				<figure class="micro-plus">
+					<div class="bar"></div>
+					<div class="bar"></div>
+				</figure>
+				<figure class="trigram">
+					<div class="bar"></div>
+					<div class="bar"></div>
+					<div class="bar"></div>
+				</figure>
+				<figure class="k"></figure>
+			</div>
+			<div class="middle">
+				<figure class="p"></figure>
+			</div>
+			<div class="right">
+				<figure class="m"></figure>
+			</div>
+		</figure>
+	</a>
+	<ul>
+		<li><a href="/about" data-ng-class="{'active': currentView == 'about'}"><i class="icon-id-card"></i><span>About</span></a></li>
+		<li><a href="/development" data-ng-class="{'active': currentView == 'development'}"><i class="icon-code"></i><span>Development</span></a></li>
+		<li><a href="/design" data-ng-class="{'active': currentView == 'design'}"><i class="icon-coverflow"></i><span>Design</span></a></li>
+		<li><a href="/apps" data-ng-class="{'active': currentView == 'apps'}"><i class="icon-grid-lg"></i><span>Apps</span></a></li>
+		<li><a href="/lab" data-ng-class="{'active': currentView == 'lab'}"><i class="icon-flask"></i><span>Lab</span></a></li>
+		<!-- <li><a><i class="icon-text-doc"></i><span>Blog</span></a></li> -->
+		<li><a href="mailto:kvn.p.mrtn@gmail.com" target="_blank" data-ng-class="{'active': currentView == 'contact'}"><i class="icon-envelope"></i><span>Contact</span></a></li>
+		<li><a href="http://bit.ly/18PT9hI" target="_blank"><i class="icon-notepad"></i><span>Resumé</span></a></li>
+		<li><a href="http://github.com/aslan11" target="_blank"><i class="socicon">Q</i><span>Github</span></a></li>
+		<li><a href="http://dribbble.com/alucard11" target="_blank"><i class="socicon">D</i><span>Dribbble</span></a></li>
+		<li><a href="http://www.linkedin.com/pub/kevin-martin/59/9a2/b7b/"><i class="socicon">j</i><span>Linkedin</span></a></li>
+	</ul>
+</nav>
+
+<div class="containers" data-ng-class="{'shift': menuHover}">
+	<!-- Home Container -->
+	<section class="container home-container" data-ng-hide="currentView != 'home'">
+		<div class="shot">
+		  <div class="model">
+		    <div class="plus plus-one">
+		      <div class="bar"></div>
+		      <div class="bar"></div>
+		    </div>
+		    <div class="plus plus-two">
+		    	<div class="bar"></div>
+		    	<div class="bar"></div>
+		    </div>
+		    <div class="plus plus-three">
+		    	<div class="bar"></div>
+		    	<div class="bar"></div>
+		    </div>
+		    <div class="plus plus-four">
+		    	<div class="bar"></div>
+		    	<div class="bar"></div>
+		    </div>
+		    <div class="beam beam-one"></div>
+		    <div class="beam beam-two"></div>
+		    <div class="beam beam-three"></div>
+		    <div class="beam beam-four"></div>
+		    <div class="beam beam-five"></div>
+		    <div class="beam beam-six"></div>
+		    <img src="styles/img/letter-k.png" alt="" class="k" />
+		    <img src="styles/img/letter-p.png" alt="" class="p" />
+		    <img src="styles/img/letter-m.png" alt="" class="m" />
+		    
+		  </div>
+		</div>
+		<h1>PERFECTING THE PROCESS OF PRODUCING PIXELS</h1>
+	</section>
+	<section class="container about-container" data-ng-hide="currentView != 'about'">
+		<div class="cell">
+			<div class="about-text">
+				<h1>This Is My Story</h1>
+				<p>In 2012 I studied Web Development at The Starter League, an intense programming boot camp. While there I honed the skill-set of a digital craftsman. Skills like HTML5, CSS3, Ruby on Rails, Javascript, and jQuery have allowed me to work on a multitude of different projects designed for various platforms. I am well accustomed to the challenges of Cross-Browser Quirks, Responsive Development, Mobile Development, and International Development. Working as a professional in the web industry these last few years has opened my eyes to a lot, and I'm reminded every day that I'm never done learning. Most recently I've been diving into new exciting javascript technologies such as AngularJS, ExpressJS, and NodeJS. I want to continue to contribute to making the web a better tool for humanity.</p>
+				<p>Shortly after becoming a professional Developer after my session at The Starter League, I began to fall in love with designing the interfaces I had been coding day in and day out. I started to follow design websites and forums and began to learn everything I could about clean and proper UX Design. I try to draw and code daily while staying involved with communities like Dribbble and Codepen. While working at Keeper Security I was often consulted in the design process and even took the lead design roles on both a website re-design as well as an app re-design. Graphic Design is something I truly enjoy, and while I'm a Developer first and foremost, I still enjoy creating both Graphic and UX Designs.</p>
+			</div>
+			<div class="portrait">
+				<img class="avatar" src="styles/img/avatar.jpg"/>
+			</div>
+		</div>
+	</section>
+	<section class="container dev-container data-ng-hide" data-ng-hide="currentView != 'development'">
+		<div class="cell">
+			<h1>My Best Work</h1>
+			<div>
+				<a href="http://ui8.net" target="_blank"><img src="styles/img/ui8.png" alt="UI8"></a>
+				<h3>UI8</h3>
+				<p class="blurb">
+					UI8 is the asset store operated by the team at Creativedash. During my time there, the senior developer and myself built a brand new node-based e-commerce platform. It was our first node/angular endeavour and I learned a tremendous amount about these exciting new javascript technologies. This site made it to the awwwards where it received an honorable mention.
+				</p>
+			</div>
+			<div>
+				<a href="http://taiocruz.com" target="_blank"><img src="styles/img/taio.png" alt="Taio Cruz"></a>
+				<h3>TAIO CRUZ</h3>
+				<p class="blurb">
+					While working at Creativedash, Jacob "Taio" Cruz hired us to re-do his personal site. After getting some hot PSD's from the creative director, I built this site using php, jQuery, and Wordpress. It was funny re-visiting an old technology like php after having a great time in the new node/angular world. 
+				</p>
+			</div>
+			<div>
+				<a href="http://pinmsg.com" target="_blank"><img src="styles/img/pinmsg.png" alt="PinMsg"></a>
+				<h3>PINMSG</h3>
+				<p class="blurb">
+					Pinmsg is another client I worked with during my time at Creativedash. I really enjoyed this website because of the slick animations and page transitions. This was the first controlled scrolling site I worked on, and I had a blast animating each slide. HTML5 videos for the screen content was the icing on the cake.
+				</p>
+			</div>
+		</div>
+	</section>
+	<section class="container design-container" data-ng-hide="currentView != 'design'">
+		<h1>Gallery</h1>
+		<img src="styles/img/thanks.png" alt="">
+		<img src="styles/img/woofer.png" alt="">
+		<img src="styles/img/lava.png" alt="">
+		<img src="styles/img/et.png" alt="">
+		<img src="styles/img/command.png" alt="">
+		<img src="styles/img/luxx.png" alt="">
+		<img src="styles/img/turntable.png" alt="">
+		<img src="styles/img/sync.png" alt="">
+		<img src="styles/img/spacetime.png" alt="">
+	</section>
+	<section class="container apps-container" data-ng-hide="currentView != 'apps'">
+		<h1>iOS Apps</h1>
+		<div class="ibacc">
+			<div class="iphone"></div>
+			<div class="blurb">
+				<div>
+					<h3>iBACC</h3>
+					<p>iBACC was the first iPhone app I ever created. It is a very simple blood alcohol concentration calculator. I learned a tremendous amount about Adobe Phone-Gap and the App-Store process. This app was built using HTML, CSS3, and D3JS. Once running, I packaged it in a Phone-Gap wrapper and it was off to the store.</p>
+					<a class="download" href="https://itunes.apple.com/us/app/ibacc/id803749885?ls=1&mt=8">Download Now</a>
+				</div>
+			</div>
+		</div>
+		<div class="catnapper">
+			<div class="iphone"></div>
+			<div class="blurb">
+				<div>
+					<h3>Cat Napper!</h3>
+					<p>Cat Napper! was my second iPhone app, however it was my first iPhone Game. I built this 2D infinite platformer using Unity Game Engine. Game development was really fun to dive into, and I also really enjoyed learning about apple's iAD program.</p>
+					<a class="download" href="https://itunes.apple.com/us/app/cat-napper!/id827227417?ls=1&mt=8">Download Now</a>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="container lab-container" data-ng-hide="currentView != 'lab'">
+		<h1>Experiments in Code</h1>
+		<div class="cell">
+			<p data-height="360" data-theme-id="6539" data-slug-hash="IxLDJ" data-default-tab="result" class='codepen'>See the Pen <a href='http://codepen.io/alucard11/pen/IxLDJ/'>Hexagonal Loading Animation (CSS3)</a> by Kevin Martin (<a href='http://codepen.io/alucard11'>@alucard11</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
+			<p data-height="360" data-theme-id="6539" data-slug-hash="KkFcp" data-default-tab="result" class='codepen'>See the Pen <a href='http://codepen.io/alucard11/pen/KkFcp/'>Diamond Progress Meter</a> by Kevin Martin (<a href='http://codepen.io/alucard11'>@alucard11</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
+			<p data-height="360" data-theme-id="6539" data-slug-hash="Gzjwn" data-default-tab="result" class='codepen'>See the Pen <a href='http://codepen.io/alucard11/pen/Gzjwn/'>iOS7 Record/Stop Button</a> by Kevin Martin (<a href='http://codepen.io/alucard11'>@alucard11</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
+			<p data-height="360" data-theme-id="6539" data-slug-hash="itDHB" data-default-tab="result" class='codepen'>See the Pen <a href='http://codepen.io/alucard11/pen/itDHB/'>Triangular Loading Bar CSS3</a> by Kevin Martin (<a href='http://codepen.io/alucard11'>@alucard11</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
+			<p data-height="360" data-theme-id="6539" data-slug-hash="jyGrC" data-default-tab="result" class='codepen'>See the Pen <a href='http://codepen.io/alucard11/pen/jyGrC/'>jyGrC</a> by Kevin Martin (<a href='http://codepen.io/alucard11'>@alucard11</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
+			<p data-height="360" data-theme-id="6539" data-slug-hash="amekH" data-default-tab="result" class='codepen'>See the Pen <a href='http://codepen.io/alucard11/pen/amekH/'>Hexagon Button</a> by Kevin Martin (<a href='http://codepen.io/alucard11'>@alucard11</a>) on <a href='http://codepen.io'>CodePen</a>.</p>
+			<script async src="//codepen.io/assets/embed/ei.js"></script>
+		</div>
+	</section>
+</div>
