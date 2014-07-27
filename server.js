@@ -36,5 +36,5 @@ app.get('*', function(req, res){
 	res.sendfile('public/index.html');
 });
 
-app.listen(3000);
-console.log('kicking ass on port 3000');
+app.listen(80);
+console.log('kicking ass on port 80');

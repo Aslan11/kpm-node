@@ -657,6 +657,7 @@ body {
 
 .home-container {
   background: url('img/homebg.png');
+  background-color: #1C1D20;
   background-size: cover; }
   .home-container .logo {
     width: 604px;
